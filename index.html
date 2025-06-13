@@ -39,13 +39,37 @@
         }
 
         .logo {
-            width: 150px;
-            height: 150px;
+            width: 300px;
+            height: 120px;
             margin: 0 auto 20px;
             background-image: url('./Hudence_Logo.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+        }
+
+        /* 手機優化 */
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+                padding: 30px 15px;
+                border-radius: 15px;
+            }
+            
+            .logo {
+                width: 280px;
+                height: 110px;
+            }
+            
+            .company-name {
+                font-size: 1.1rem;
+                margin-bottom: 25px;
+            }
+            
+            .link-button {
+                padding: 16px;
+                font-size: 1rem;
+            }
         }
 
         .company-name {
