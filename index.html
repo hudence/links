@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艾登星Hudence 科技教育有限公司</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans TC', sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e0f2f7; /* 一個淺藍色的底色 */
+            /* 疊加多層徑向漸層來模擬雲朵效果 */
+            background-image: 
+                radial-gradient(circle, rgba(255, 255, 255, 0.5) 10%, transparent 50%),
+                radial-gradient(circle at top left, rgba(179, 136, 235, 0.3) 20%, transparent 60%), /* 紫色 */
+                radial-gradient(circle at bottom right, rgba(232, 141, 131, 0.3) 20%, transparent 60%), /* 粉橘色 */
+                radial-gradient(circle, rgba(255, 255, 255, 0.4) 15%, transparent 55%);
+            background-size: 150%, 120%, 130%, 160%;
+            background-position: center, top left, bottom right, center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 90%;
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            background-image: url('./attached_assets/Hudence_Logo_1749830272418.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .company-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 35px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .link-button {
+            display: block;
+            padding: 18px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #E88D83;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid #E88D83;
+        }
+
+        .link-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(232, 141, 131, 0.3);
+            background-image: linear-gradient(135deg, #E88D83, #B388EB, #84CEEB);
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo"></div>
+        
+        <h1 class="company-name">艾登星Hudence 科技教育有限公司</h1>
+        
+        <div class="links-container">
+            <a href="https://sites.google.com/view/hudence" class="link-button" target="_blank">官網</a>
+            <a href="https://www.facebook.com/share/1ATFWeADsa/?mibextid=wwXIfr" class="link-button" target="_blank">Facebook 粉絲專頁</a>
+            <a href="https://www.instagram.com/hudence_teach?igsh=MWc2NWt1YTdkcnhpYg==" class="link-button" target="_blank">Instagram 帳號</a>
+        </div>
+        
+    </div>
+
+</body>
+</html>
